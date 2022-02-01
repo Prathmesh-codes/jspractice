@@ -36,12 +36,12 @@ printinfor(){
 
 //Instantiate the class
 //Create an object of a class
-const a=new person(`person1`,'ind','+91231',10)
-a.canVote()
+const d=new person(`person1`,'ind','+91231',10)
+d.canVote()
 
-const b=new person('p2','Satara','+913131',30)
-b.canVote()
+const m=new person('p2','Satara','+913131',30)
+m.canVote()
 
-a.printinfor()
-b.printinfor()
+d.printinfor()
+m.printinfor()
 
