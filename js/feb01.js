@@ -51,6 +51,7 @@ fun1()
 
 
 function f1(){
+    const nums=[10,20,30,40]
     const outervariable ="This is outer function"
    
     function innerfunc(param){
@@ -90,6 +91,30 @@ function f1(){
     }
 
     innerfunc(divide)
+
+    //traditional for loop 
+
+    for(let index=0; index<nums.length;index++){
+        console.log(`value at ${index}=${nums[index]}`)
+    }
+
+    //for-of-loop
+    //no control over starting point and ending point
+
+    for(const value of nums){
+        console.log(`value=${value}`)
+    }
+
+//for in loop
+
+for(const index in nums){
+    console.log(`index=${index}, value=${nums[index]}`)
+}
+
+//foreachfunction
+nums.forEach(value =>{
+    console.log(`value=${value}`)
+})
 
 }
 
